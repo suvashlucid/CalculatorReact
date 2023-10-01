@@ -1,18 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { subtract, multiply, divide } from './Calc';
 
 function App() {
+ var named="Suvash"
+  function checking()
+  {
+     
+      console.log(`Good!! Now You are Welcomed By ${named}Now`)
+  }
   return (
     <>
-    <ul>
-      <li> The required sub is{subtract(3, 2)}</li>
-      <li>{divide(2, 1)}</li>
-      <li>{multiply(2, 3)}</li>
-    </ul>
+        
+      <div style={{ backgroundColor: "red" }}>
+        <h1>Hi I will do welcome using {named} after clicking the click me.</h1>
+        <button className="btN" onDoubleClick={checking}>Click me</button>
+      </div>
     </>
   );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
 export default App;
+import React from 'react'
+
